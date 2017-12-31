@@ -31,6 +31,12 @@ $(document).ready(function() {
     $('#map iframe').replaceWith('<iframe class="col-xs-12 mg-bt-15 "src="' + restaurantMap + '" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>');
     $('#address').text(restaurantAddress);
     $('#lema').text(restaurantLema);
+
+    // funcion para que al cerrarse el modal despues de la busqueda vuelva a la vista principal con todos los restaurantes
+    $('#myModal').on('hidden.bs.modal', function() {
+      $('#searching').val('');
+      $('#sample div').show();
+    });
   });
 
   // buscando el restaurante dependiendo de lo que se escribe
@@ -55,6 +61,5 @@ $(document).ready(function() {
         }
       }
     }
-    
   });
 });
