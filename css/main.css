@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .flex-center-center {
   height: 100vh;
   display:flex;
@@ -31,4 +34,13 @@
 }
 .mg-bt-15 {
   margin-bottom: 15px;
+}
+.mg-top-25 {
+  margin-top: 25px;
+}
+.rest {
+  color: #fff;
+}
+.sombra {
+  filter: grayscale(30%);
 }
