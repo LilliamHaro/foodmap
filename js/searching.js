@@ -3,7 +3,7 @@ $(document).ready(function() {
   for (var i = 0; i < data.length; i++) {
     $('#sample').append('<div class="rest" data-toggle="modal" data-target="#myModal" data-num="' + data[i]['num'] + '" data-tag="' + data[i]['tags'] + '">' + data[i]['photo'] + '</div>');
     // añadiendo clases para mostrar los restaurantes de forma ordenada
-    $('#sample img').addClass('col-xs-4 mg-bt-25 height-60');
+    $('#sample img').addClass('col-xs-4 mg-bt-25 height-25');
   }
 
   // añadiedo efecto al evento mouseover en desktop
@@ -23,9 +23,12 @@ $(document).ready(function() {
     var restaurantName = data[indexRestaurant]['name'];
     var restaurantAddress = data[indexRestaurant]['address'];
     var restaurantLema = data[indexRestaurant]['lema'];
+    var restaurantMap = data[indexRestaurant]['map'];
     // console.log(restaurantName);
+    console.log(restaurantMap);
     // asignando la informacion del restaurante seleccionado al contenido del modal
     $('#myModalLabel').text(restaurantName);
+    $('#map iframe').replaceWith('<iframe src="' + restaurantMap + '" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>');
     $('#address').text(restaurantAddress);
     $('#lema').text(restaurantLema);
   });
@@ -52,7 +55,5 @@ $(document).ready(function() {
         }
       }
     }
-    $('#sample div').mouseover(function() {
-    });
   });
 });
