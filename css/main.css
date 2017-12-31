@@ -54,6 +54,12 @@
 .bold-text {
   font-weight: bold;
 }
+.bloque {
+  display: block;
+}
 .info {
   font-size: 18px;
+}
+.bg-orange {
+  background-color: orange
 }

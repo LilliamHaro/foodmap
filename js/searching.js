@@ -28,7 +28,7 @@ $(document).ready(function() {
     console.log(restaurantMap);
     // asignando la informacion del restaurante seleccionado al contenido del modal
     $('#myModalLabel').text(restaurantName);
-    $('#map iframe').replaceWith('<iframe src="' + restaurantMap + '" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>');
+    $('#map iframe').replaceWith('<iframe class="col-xs-12 mg-bt-15 "src="' + restaurantMap + '" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>');
     $('#address').text(restaurantAddress);
     $('#lema').text(restaurantLema);
   });
@@ -55,5 +55,6 @@ $(document).ready(function() {
         }
       }
     }
+    
   });
 });
