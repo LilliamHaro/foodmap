@@ -1,25 +1,33 @@
 $(document).ready(function() {
-  // mostrando todos los restaurantes que hay en la base de datos
+  // mostrando todos los restaurantes que hay en la data
   for (var i = 0; i < data.length; i++) {
     $('#sample').append('<div class="rest" data-toggle="modal" data-target="#myModal" data-num="' + data[i]['num'] + '" data-tag="' + data[i]['tags'] + '">' + data[i]['photo'] + '</div>');
     // añadiendo clases para mostrar los restaurantes de forma ordenada
     $('#sample img').addClass('col-xs-4 mg-bt-25 height-60');
   }
 
+  // añadiedo efecto al evento mouseover en desktop
   $('#sample div img').mouseover(function() {
     $(this).addClass('col-md-6');
   });
+  // quitando los efectos del mouse over en desktop
   $('#sample div img').mouseout(function() {
     $(this).removeClass('col-md-6');
   });
 
-
+  // funcionalidad del modal
   $('#sample div').on('click', function(event) {
     var indexRestaurant = $(this).data('num');
     // console.log(indexRestaurant);
+    // obteniendo datos del restaurante seleccionado
     var restaurantName = data[indexRestaurant]['name'];
+    var restaurantAddress = data[indexRestaurant]['address'];
+    var restaurantLema = data[indexRestaurant]['lema'];
     // console.log(restaurantName);
+    // asignando la informacion del restaurante seleccionado al contenido del modal
     $('#myModalLabel').text(restaurantName);
+    $('#address').text(restaurantAddress);
+    $('#lema').text(restaurantLema);
   });
 
   // buscando el restaurante dependiendo de lo que se escribe
