@@ -39,7 +39,7 @@ var data = [
     name: 'Pepe',
     photo: '<img src="../assets/images/pepe.jpg" alt="">',
     tags: 'cevicheria',
-    address: 'santistevan entre tungurahua y eloy alfaro',
+    address: 'Av.santistevan entre tungurahua y eloy alfaro',
     lema: '"Hoy es un gran día para comer ceviche"',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62433.16876081594!2d-77.12861162729263!3d-12.03849206695824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cef32b69fdc1%3A0xdbd8872237ace6fb!2sPepe&#39;s!5e0!3m2!1ses-419!2spe!4v1514708825117',
     num: 4

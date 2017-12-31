@@ -33,8 +33,11 @@ $(document).ready(function() {
     $('#lema').text(restaurantLema);
 
     // funcion para que al cerrarse el modal despues de la busqueda vuelva a la vista principal con todos los restaurantes
+    // hidden.bs.modal --> Es un modal Event, se produce cuando el modal termina de ocultarse
     $('#myModal').on('hidden.bs.modal', function() {
+      // vaciando el buscador
       $('#searching').val('');
+      // mostrando todos los restaurantes otra vez
       $('#sample div').show();
     });
   });
