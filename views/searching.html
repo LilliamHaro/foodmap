@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" href="../css/main.css">
     <title></title>
   </head>
-  <body>
+  <body class="bg-black">
     <div id="main" class="main bg-black container orange pd-35">
       <p class="text-center fz-45 pd-top-30">Foodmap</p>
       <div class="map mg-bt-25">
@@ -23,13 +23,29 @@
       <div class="container">
         <div class="row">
           <div class="input-group col-xs-12">
-            <input id="searching"type="text" class="form-control" aria-label="aaa">
+            <input id="searching"type="text" class="form-control" aria-label="aaa" placeholder="cevicheria, polleria, criollo, sushi">
          </div>
         </div>
 
         <div class="row">
           <div id="sample" class="col-xs-12 mg-top-25">
+          </div>
 
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div id="modal-content" class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Pedir ahora</button>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>

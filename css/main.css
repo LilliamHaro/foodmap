@@ -42,5 +42,14 @@
   color: #fff;
 }
 .sombra {
-  filter: grayscale(30%);
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  }
+.height-60 {
+  height: 33vw;
 }
