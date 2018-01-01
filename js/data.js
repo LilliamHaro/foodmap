@@ -40,12 +40,12 @@ var data = [
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8129356134327!2d-77.0393715853076!3d-12.124948191415234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c823d8edffdb%3A0x8225ba13c7d63a3b!2sCalle+Tripoli+%26+Malec%C3%B3n+Cisneros%2C+Miraflores+15074!5e0!3m2!1ses-419!2spe!4v1514708675802',
     num: 2,
     offers:
-    [{image: '<img src="../assets/images/jalea.jpg" alt="">',
+    [{image: '<img src="../assets/images/jalea.JPG" alt="">',
       plate: 'Jalea para dos',
       price: 's/ 28.50'},
     {image: '<img src="../assets/images/ceviche.jpg" alt="">',
       plate: 'Ceviche mixto para dos',
-      price: 's/ 18.50'},]
+      price: 's/ 18.50'}]
   },
   {
     name: 'Cevicheria Sara Sara',
