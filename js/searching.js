@@ -24,6 +24,7 @@ $(document).ready(function() {
     var restaurantAddress = data[indexRestaurant]['address'];
     var restaurantLema = data[indexRestaurant]['lema'];
     var restaurantMap = data[indexRestaurant]['map'];
+    var restaurantOfferts = data[indexRestaurant]['offers'];
     // console.log(restaurantName);
     console.log(restaurantMap);
     // asignando la informacion del restaurante seleccionado al contenido del modal
@@ -32,21 +33,49 @@ $(document).ready(function() {
     $('#address').text(restaurantAddress);
     $('#lema').text(restaurantLema);
 
+    // verificando si hay platos en oferta -- si la propiedad offers esta vacía
+    if (restaurantOfferts === undefined) {
+      $('#show-offers').append('<div class="text-center color-black"> En este momento no hay ofertas disponibles </div>');
+    } else {
+      // recorriendo el array con las ofertas para ubicarlas en su respectiva seccion que por el momento permanecerá oculta
+      for (var j = 0; j < restaurantOfferts.length; j++) {
+        var imagePlate = restaurantOfferts[j]['image'];
+        var infoPlate = restaurantOfferts[j]['plate'];
+        var infoPrice = restaurantOfferts[j]['price'];
+        $('#show-offers').append('<div class="text-center offert color-black bold-text">' + imagePlate + infoPlate + '<br>' + infoPrice + '</div>');
+        if (restaurantOfferts.length === 1) {
+          $('.offert').addClass('col-xs-12');
+          $('.offert img').addClass('col-xs-offset-3 col-xs-6 mg-rigth-25');
+        } else {
+          $('.offert').addClass('col-xs-6');
+          $('.offert img').addClass('col-xs-12');
+        }
+      }
+    }
+
+    // al hacer click en la $('#offers') la seccion con los platos en oferta disponibles se mostrará en el modal
+    $('#offers').on('click', function(event) {
+      $('#show-offers').removeClass('display-none');
+    });
+
     // funcion para que al cerrarse el modal despues de la busqueda vuelva a la vista principal con todos los restaurantes
     // hidden.bs.modal --> Es un modal Event, se produce cuando el modal termina de ocultarse
-    $('#myModal').on('hidden.bs.modal', function() {
+    $('#myModal').on('hidden.bs.modal', function(event) {
       // vaciando el buscador
       $('#searching').val('');
       // mostrando todos los restaurantes otra vez
       $('#sample div').show();
+      // limpiando la seccion de ofertas
+      $('#show-offers').children().remove();
+      $('#show-offers').addClass('display-none');
     });
   });
 
-  // buscando el restaurante dependiendo de lo que se escribe
-  // la busqueda depende del atributo data que se generó en la parte superior y de lo que se ingresa en el input
+  // funcionalidad del buscador
+  // la busqueda depende del atributo data-tag proveniente de la propiedad tags desl objeto con la info del restaurante y del value del input
   $('#searching').on('input', function(event) {
     var inputSearch = $(this).val();
-    // seleccionando todos los restaurante y convirtiendo el elemento en un array
+    // seleccionando todos los restaurante por su clase y convirtiendo el elemento en un array
     var restaurants = $('.rest').toArray();
     // variable vacía para almacena el data-tag por el que se distinguira cada restaurante
     var dataRestaurant = '';
@@ -56,7 +85,7 @@ $(document).ready(function() {
       dataRestaurant = $(restaurants[i]).data('tag');
       console.log(dataRestaurant);
       for (var j = 0; j < dataRestaurant.length; j++) {
-        // comparando el data-tag con lo ingresado en el input
+        // comparando el data-tag con lo ingresado en el input -- si es mayor que -1 significa que encontró coincidencias para mostrar
         if (dataRestaurant.indexOf(inputSearch) > -1) {
           $(restaurants[i]).show();
         } else {
