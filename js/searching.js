@@ -34,7 +34,7 @@ $(document).ready(function() {
     $('#lema').text(restaurantLema);
 
     // verificando si hay platos en oferta -- si la propiedad offers esta vacía
-    if (restaurantOfferts === undefined) {
+    if (restaurantOfferts === undefined || restaurantOfferts.length === 0) {
       $('#show-offers').append('<div class="text-center color-black"> En este momento no hay ofertas disponibles </div>');
     } else {
       // recorriendo el array con las ofertas para ubicarlas en su respectiva seccion que por el momento permanecerá oculta

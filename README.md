@@ -1,6 +1,6 @@
 ## README
 1. **Descripcion del proyecto:**
-  - Este proyecto contiene la simulacion de una aplicacion de busqueda de restaurantes
+  - Este proyecto contiene la simulacion de una aplicacion de busqueda de restaurantes.
 
 2. **Autor:**
 
@@ -21,13 +21,14 @@
 
   - La forma de filtrado que se eligió fue por tipo de restaurantes que se muestran como guia mediante un placeholder en el input
 
-  * FILTROS :
+  * FILTROS / TAGS:
   - cevicheria
   - polleria
   - sushi
   - criollo
 
   - El modal que aparece toma dinamicamente la información del restaurant seleccionado.
+  - Los modales estan disponibles antes y despues de cada busqueda.
 
 **VISTA DE LA APLICACIÓN EN ORDEN**
 
@@ -36,3 +37,5 @@
 ![RECURSOS](assets/images/principal.png)
 
 ![RECURSOS](assets/images/modal.png)
+
+![RECURSOS](assets/images/ofertas.png)
