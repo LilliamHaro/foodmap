@@ -6,7 +6,10 @@ var data = [
     address: 'Av. Ricardo Palma 303',
     lema: '"Bar, Parrilla, Pub, Bar de vinos y más"',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.8991851586934!2d-77.02975798530755!3d-12.119049991419162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c819ffb33e41%3A0x126e6d8656f4ba8c!2sAv.+Ricardo+Palma+303%2C+Miraflores+15074!5e0!3m2!1ses-419!2spe!4v1514706958855',
-    num: 0
+    num: 0,
+    offer1: '1/4 de pollo más guarnicion a solo S/15.90',
+    offer2: 'Porción familiar de anticuchos a solo S/35.90',
+    offer3: 'La segunda parrilla grande a  solo 1 sol !!'
   },
   {
     name: 'Corralito',
@@ -15,7 +18,10 @@ var data = [
     address: 'Av. La marina 880 La perla -Callao',
     lema: '"Estamos en todos lados"',
     map: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d975.4059211352114!2d-77.1128512411567!3d-12.069392797990762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cbdd223f5d73%3A0xd824ae41551d9b4c!2sCORRALITO!5e0!3m2!1ses-419!2spe!4v1514707630400',
-    num: 1
+    num: 1,
+    offer1: 'Pollo Entero a S/45.90',
+    offer2: '',
+    offer3: ''
   },
   {
     name: 'Punta sal',

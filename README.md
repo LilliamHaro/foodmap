@@ -15,15 +15,19 @@
 
 4. **Criterios de Busqueda y filtrado**
 
-  - Al utilizar un array de objeto hicimos que cada restaurant(objeto) tenga un propiedad llamada tags con lo que tendría que compararse al ingresar texto en el input
+  - Al utilizar un array de objetos hicimos que cada restaurant(objeto) tenga un propiedad llamada tags con lo que tendría que compararse al ingresar texto en el input
 
-  - La forma de filtrado que se eligio fue por tipo de restaurantes que se muestran como guia mediante un placeholder en el input
+  - El buscador muestra los restaurantes con coincidan con lo ingresado en el input y los que no coinciden se ocultan
+
+  - La forma de filtrado que se eligió fue por tipo de restaurantes que se muestran como guia mediante un placeholder en el input
 
   * FILTROS :
   - cevicheria
   - polleria
   - sushi
   - criollo
+
+  - El modal que aparece toma dinamicamente la información del restaurant seleccionado.
 
 **VISTA DE LA APLICACIÓN EN ORDEN**
 

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // mostrando todos los restaurantes que hay en la data
+  // mostrando todos los restaurantes que hay en la data en la seccion de muestra(sample)
   for (var i = 0; i < data.length; i++) {
     $('#sample').append('<div class="rest" data-toggle="modal" data-target="#myModal" data-num="' + data[i]['num'] + '" data-tag="' + data[i]['tags'] + '">' + data[i]['photo'] + '</div>');
     // añadiendo clases para mostrar los restaurantes de forma ordenada
