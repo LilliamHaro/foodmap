@@ -74,7 +74,8 @@ $(document).ready(function() {
   // funcionalidad del buscador
   // la busqueda depende del atributo data-tag proveniente de la propiedad tags desl objeto con la info del restaurante y del value del input
   $('#searching').on('input', function(event) {
-    var inputSearch = $(this).val();
+    // obteniendo el value del input y volviendolo a minuscula por si es que el usuario ingresa mayusculas
+    var inputSearch = $(this).val().toLowerCase();
     // seleccionando todos los restaurante por su clase y convirtiendo el elemento en un array
     var restaurants = $('.rest').toArray();
     // variable vacía para almacena el data-tag por el que se distinguira cada restaurante
