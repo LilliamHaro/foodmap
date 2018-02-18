@@ -1,18 +1,17 @@
 $(document).ready(function() {
   // mostrando todos los restaurantes que hay en la data en la seccion de muestra(sample)
   for (var i = 0; i < data.length; i++) {
-    $('#sample').append('<div class="rest" data-toggle="modal" data-target="#myModal" data-num="' + data[i]['num'] + '" data-tag="' + data[i]['tags'] + '">' + data[i]['photo'] + '</div>');
+    $('#sample').append('<div class="rest img-rounded col-xs-6 col-md-3 height-25  mg-bt-25" data-toggle="modal" data-target="#myModal" data-num="' + data[i]['num'] + '" data-tag="' + data[i]['tags'] + '"> <center>' + data[i]['photo'] + '</center><div class="sobre-texto">' + data[i]['name'] + '</div></div>');
     // añadiendo clases para mostrar los restaurantes de forma ordenada
-    $('#sample img').addClass('col-xs-4 mg-bt-25 height-25');
+    $('#sample img').addClass('image-responsive height-25 img-rounded margin-auto relative');
   }
-
   // añadiedo efecto al evento mouseover en desktop
   $('#sample div img').mouseover(function() {
-    $(this).addClass('col-md-6');
+    $(this).addClass('opacity');
   });
   // quitando los efectos del mouse over en desktop
   $('#sample div img').mouseout(function() {
-    $(this).removeClass('col-md-6');
+    $(this).removeClass('opacity');
   });
 
   // funcionalidad del modal
@@ -47,8 +46,8 @@ $(document).ready(function() {
           $('.offert').addClass('col-xs-12');
           $('.offert img').addClass('col-xs-offset-3 col-xs-6 mg-rigth-25');
         } else {
-          $('.offert').addClass('col-xs-6');
-          $('.offert img').addClass('col-xs-12');
+          $('.offert').addClass('col-xs-6 col-md-6');
+          $('.offert img').addClass('col-xs-12 col-md-5 image-responsive');
         }
       }
     }

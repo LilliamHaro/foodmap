@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Asul" rel="stylesheet">
   <!--Import bootstrap css-->
   <link type="text/css" rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css" />
   <!-- main.css-->
@@ -20,14 +20,19 @@
      <div class="text-center orange fz-25 mg-bt-15">
       Comida cerca de ti
      </div>
-     <div class="container">
+     <hr>
+     <div class="">
 
       <div class="row">
        <div class="input-group col-xs-12">
-        <input id="searching"type="text" class="form-control" aria-label="aaa" placeholder="cevicheria, polleria, criollo, sushi">
+        <!-- <input id="searching"type="text" class="input" aria-label="aaa" placeholder="cevicheria, polleria, criollo, sushi"> -->
+        <div class="input-group col-xs-12">
+          <span class="input-group-addon" id="basic-addon1"><i class="fa fa-utensils"></i></span>
+          <input id="searching" type="text" class="form-control" placeholder="Cevicheria, polleria, criollo, sushi" aria-describedby="basic-addon1">
+        </div>
        </div>
       </div>
-
+      <div class="">
       <div class="row">
        <div id="sample" class="col-xs-12 mg-top-25">
        </div>
@@ -46,20 +51,23 @@
                <p id="address" class="text-center color-black info"></p>
                <p id="lema" class="text-center color-gray"></p>
                <p id="offers" class="text-center color-red bold-text">Mira las ofertas que tenemos para ti!</p>
-               <div id="show-offers" class="display-none container">
+               <div id="show-offers" class="display-none">
                </div>
              </div>
              <div class="modal-footer">
-               <button type="button" class="btn btn-default col-xs-offset-4 col-xs-4 bg-orange" data-dismiss="modal">Pedir ahora</button>
+               <button type="button" class="btn btn-default col-xs-offset-4 col-xs-4 bg-orange mg-top-25" data-dismiss="modal">Pedir ahora</button>
              </div>
            </div>
          </div>
        </div>
      </div>
+    </div>
    </div>
- </div>
+  </div>
+
 
 <!--Import jQuery -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <script type="text/javascript" src="../vendors/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="../js/data.js"></script>

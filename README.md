@@ -1,5 +1,5 @@
-## README
-1. **Descripcion del proyecto:**
+# FOODMAP
+## Descripcion del proyecto:
   - Este proyecto contiene la simulacion de una aplicacion de busqueda de restaurantes.
 
 2. **Autor:**
