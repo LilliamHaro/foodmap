@@ -1,7 +1,6 @@
 # FOODMAP
 
-## Descripcion del proyecto:
-  - Este proyecto contiene una una aplicacion responsive de busqueda de restaurantes generada de forma dinámica y consumiendo data interna para obtener la información.
+Este proyecto contiene una una aplicacion responsive de busqueda de restaurantes generada dinámicamente y consumiendo data interna para obtener la información.
 
 ![RECURSOS](assets/images/image-1.png)
 
