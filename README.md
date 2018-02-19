@@ -1,6 +1,11 @@
 # FOODMAP
+
 ## Descripcion del proyecto:
-  - Este proyecto contiene la simulacion de una aplicacion de busqueda de restaurantes.
+  - Este proyecto contiene una una aplicacion responsive de busqueda de restaurantes generada de forma dinámica y consumiendo data interna para obtener la información.
+
+![RECURSOS](assets/images/image-1.png)
+
+## Desarrollado para [Laboratoria](http://laboratoria.la/codeacademy/)
 
 2. **Autor:**
 
