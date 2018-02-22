@@ -1,6 +1,6 @@
 # FOODMAP
 
-Este proyecto contiene una una aplicacion responsive de busqueda de restaurantes generada dinámicamente  qu consume data interna para obtener la información.
+Este proyecto contiene una aplicación responsive de búsqueda de restaurantes mostrando su información mediante un modal generado dinámicamente y que consume data interna para obtener la información.
 
 ![foodmap](https://user-images.githubusercontent.com/32288575/36438522-367323dc-1638-11e8-8da5-0ffd7b3ce65d.png)
 
